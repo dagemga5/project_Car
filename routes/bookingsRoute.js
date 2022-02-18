@@ -5,7 +5,7 @@ const Car = require("../models/carModel");
 const { v4: uuidv4 } = require("uuid");
 require('dotenv').config()
 const stripe = require("stripe")(
-  "sk_test_51KRuUeFEw6JT16CIGGrcS6qwtPFaQTguSfGnGvWYkUKbha57lzB6llsoy6JjVqjbUJ8d71lORECWIAgVWkiSh8aS00zQf9CIwk"
+ process.env.STRIPE_KEY
 );
 router.post("/bookcar", async (req, res) => {
   const { token } = req.body;

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 function connectDB(){
-    mongoose.connect('mongodb+srv://dagemga6:lama@cluster0.jcwqn.mongodb.net/Rental-cars', {
+    mongoose.connect(process.env.MONGO_URL, {
         useNewUrlParser: true, 
         useUnifiedTopology: true,
     })

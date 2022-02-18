@@ -1,4 +1,5 @@
 const express = require("express");
+const bcrypt = require('bcrypt');
 const router = express.Router();
 const User = require("../models/userModel");
 
@@ -22,7 +23,13 @@ router.post("/login", async(req, res) => {
 router.post("/register", async(req, res) => {
 
     try {
-        const newuser = new User(req.body)
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(req.body.password, salt)
+        const newuser = new User({
+            username: req.body.username,
+            email:req.body.email,
+            password:hashedPassword,
+        }) 
         await newuser.save()
         res.send('registered successfully')
     } catch (error) {

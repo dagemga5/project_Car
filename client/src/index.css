@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Playfair Display', serif;
+  background-color: ghostwhite;
+  width: 100vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.bs1{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; 
+}
+.ant-row{
+  margin: 0 20 !important;
+}
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+}
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  color : dodgerblue;
+}
+p{
+  margin: 5px !important;
+  
+  padding: 0;
+}
+.btn1{
+  box-shadow: none !important;
+  background-color : white !important;
+  color: dodgerblue !important;
+  border: 1px solid dodgerblue !important;
+  padding: 5px 15px !important;
+  outline: none !important;
+}
+.bt1:focus{
+  border: none;
+}
+.btn2{
+  box-shadow: none !important;
+  background-color : white !important;
+  color: red !important;
+  border: 1px solid red !important;
+  padding: 5px 15px !important;
+  outline: none !important;
+}
+button{
+  padding: 3px 10px !important;
+}
+.header{
+  padding: 10px;
+  
+}
+.header .ant-btn{
+  box-shadow: none !important;
+  background-color : white !important;
+  color: dodgerblue !important;
+  border: 1px solid dodgerblue !important;
+  padding: 5px 15px !important;
+  outline: none !important;
+}
+.content{
+  min-height: 90vh;
+  
+}
+.footer{
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+
+/* this is just for ui purpose , no functionality is related */
+.car{
+  border-radius: 5px;
+  margin-top: 100px;
+  height: 160px;
+  transition: 0.3s;
+}
+.car:hover{
+  height :220px;
+}
+.car:hover > .car-content{
+
+    opacity: 1;
+    transform : translateY(-50px)
+
+}
+.carimg{
+  height:180px;
+  width: 240px;
+  border-radius: 5px;
+  transform: translateY(-50px);
+
+}
+.car-content{
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login{
+  background-color: black;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+.login label , .login h1{
+  color: white !important;
+  opacity: 0.6;
+}
+.login-form{
+  background-color: #1F1F1F;
+}
+.login-form input{
+  background-color: #333333 !important;
+  border : none !important;
+  color: white;
+  opacity: 0.5;
+}
+.login-logo{
+  position: absolute;
+  left:0;
+  right:0;
+  top: 60%;
+  bottom: 50%;
+  transform: translateY(-50% , -50%);
+  font-size:45px;
+  opacity: 0.2 !important;
+  
+
+}
+.login a{
+  color: white !important;
+  opacity: 0.5;
+}
+
+.carimg2{
+  height: 400px;
+  border-radius: 10px;
+  width: auto;
+}
+.carimg3{
+  height: 600px;
+  border-radius: 10px;
+  width: auto;
+}
+
+
+svg{
+  height:20px !important;
+  width : 20px !important;
+}
+a{
+  color: dodgerblue !important;}
+
+.row{
+  display: flex;
+  align-items: center;
+} 
+
+.login a{
+  color: white !important;
+  opacity: 0.5; 
+}
+.rental{
+  color: dodgerblue;
+  font-family: 'Monoton', cursive;
+font-family: 'Playfair Display', serif;
+}
+.carinfo{
+  width: 60%;
+  margin-left: 150px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px;
+  padding: 16px;
+  text-align: center;
+}
+.booked{
+  width: 60%;
+  margin-left: 150px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px;
+  padding: 16px;
+  text-align: center;
+}
+.totals{
+  width: 60%;
+  margin-left: 150px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px;
+  padding: 16px;
+  text-align: center;
+}
+.para1{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 5px !important;
+  padding: 0;
+  font-size: 50px !important;
+}
+.multicolortext {
+  background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red) !important;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  font-family: 'Monoton', cursive;
+font-family: 'Playfair Display', serif;
+font-size: 30px;
+margin-bottom: 3px;
+font-weight: 900;
+
+}
+.btn4{
+  box-shadow: none !important;
+  background-color : white !important;
+  color: dodgerblue !important;
+  border: 1px solid dodgerblue !important;
+  padding: 5px 15px !important;
+  outline: none !important;
+  justify-content: space-between;
+}

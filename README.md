@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=dagemga5&label=Profile%20views&color=0e75b6&style=flat" alt="dagemga5" /> </p>
 
-- 🔭 I’m currently working on [car Rental Site](https://mekina-renta.herokuapp.com/login)
+- 🔭 I’m currently working on [car Rental Site](https://mekina-rental.herokuapp.com/login)
 
 - 🌱 I’m currently learning **MERN Stack**
 
